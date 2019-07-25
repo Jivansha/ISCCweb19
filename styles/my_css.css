@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700,800');
+@font-face
+{
+	font-family: 'Myriad Pro Regular';
+	src: url('../fonts/myriad-pro-regular.ttf')  format('truetype'),
+		 url('../fonts/myriad-pro-regular.otf')  format('opentype');
+}
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 2;
+	font-weight: 400;
+	background: #FFFFFF;
+	color: #6e6e6e;
+}
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 2;
+	font-weight: 400;
+	color: #6e6e6e;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+#team h2{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#team h3{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#flex{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    padding: 5%;
+}
+
+@media (max-width : 800px){
+    #flex{
+        grid-template-columns: 50%;
+    }
+}
+
+#box{
+    float: left; 
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    border: #6e6e6e8e solid 1px;
+}
+
+#image{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+#image2{
+    width: 230px;
+    height: 230px;
+    padding: 20px;
+}
+
+#box2{
+    float: left; 
+    padding:10px 20px 20px 20px;
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    font-size: 12px;
+    border: #a1a1a18e solid 1px;
+}
+
+#title_sponsor img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+}
+
+#sponsor_logo{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+}
+
+#sponsor1{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    padding: 5%;
+}
+
+#sponsor2{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    padding: 5%;
+}
+
+#main_events{
+    text-align: center;
+    margin: 50px 20% 50px 20%;
+}
+
+#login_page{
+    background: #040038d5;
+    height: 100vh;
+}
+
+#login_page h1{
+    font-size: 23px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#login_box{
+    
+    margin: 150px 20% 150px 20%;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+}
+
+.left_box{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 15px 30px 30px 40px;
+    height: 400px;
+    width: 350px;
+}
+
+.left_box input[type="text"], input[type="email"], 
+input[type="password"]{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 250px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaaaaa;
+    transition: 0.2s ease;
+}
+
+.left_box input[type="submit"]{
+    padding: 12px 25px 12px 25px;
+    border: none;
+    outline: none;
+    background: #ff0000;
+    color: #fff;
+}
+
+.left_box input[type="submit"]:hover{
+    background: #ff6c17;
+    transition: 0.2s ease;
+}
+
+
+.right_box{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px 30px 30px 40px;
+    height: 400px;
+    width: 380px;
+    right: 0;
+    border-left: 1px solid #aaaaaa;
+    text-align: center;
+}
+
+.signinwith{
+    font-size: 23px;
+    color: #000;   
+}
+
+.or{
+    position: absolute;
+    top:180px;
+    left: 363px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 23px;
+    background: #fff;
+    color: #040038d5;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.678);
+    text-align: center;
+}
+
+.facebook{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    background: #0400ddef;
+    margin: 10px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+.google{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    background: #c90000ef;
+    margin: 10px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+
+.twitter{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    background: #00acf0ef;
+    margin: 10px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    
+}
+
+#register p{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social_ini_pic{
+    position: absolute;
+	top: -28px;
+	left: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 94px;
+	height: 94px;
+    
+}
+
+#seminar_list{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#seminar_list h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.seminar_box{
+    float: left;
+    position: relative;
+    width: 800px;
+    height: 280px;
+    border-radius: 10px;
+    margin: 20px auto 10px auto;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.397);
+}
+
+#speaker_pic{
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 10px;
+    margin-top: 45px;
+    margin-left: 20px;
+
+}
+
+.seminar_text{
+    float: right;
+    position: absolute;
+    padding: 20px;
+    text-align: justify;
+    left: 200px;
+}
+
+.event_box{
+    margin-bottom: 50px;
+}
+
+.event_box h2{
+    text-align: center; 
+    font-size:30px; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+#pass_pic{
+    width: 100vw;
+    height: 85vh;
+    margin-top: 95px;
+}
+
+#passname{ 
+    position: absolute;
+    font-size: 25px;
+    color: #ff4200;
+    font-weight: bold;
+    margin-top: 320px;
+    margin-left: 500px;
+    padding: 5px;
+}
+
+#passmail{ 
+    position: absolute;
+    font-size: 25px;
+    color: #ff4200;
+    font-weight: bold;
+    margin-top: 350px;
+    margin-left: 500px;
+    padding: 5px;
+}
+
+#passcontact{ 
+    position: absolute;
+    font-size: 25px;
+    color: #ff4200;
+    font-weight: bold;
+    margin-top: 380px;
+    margin-left: 500px;
+    padding: 5px;
+}
+
+#passcollege{ 
+    position: absolute;
+    font-size: 25px;
+    color: #ff4200;
+    font-weight: bold;
+    margin-top: 410px;
+    margin-left: 500px;
+    padding: 5px;
+}

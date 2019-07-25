@@ -344,13 +344,14 @@ section
 	transition: all 300ms ease;
 }
 
+
 /*********************************
 3.1 Logo
 *********************************/
 
 .logo_container
 {
-	flex-basis: 50%;
+	flex-basis: 200%;
 }
 .logo
 {
@@ -385,17 +386,19 @@ section
 {
 	margin-right: -3px;
 	height: 100%;
-	flex-basis: 200%;
+	flex-basis: 100%;
 	text-align: right;
 }
 .nav_items
 {
 	height: 100%;
+	display: flex;
 }
 .nav_items li
 {
 	display: inline-block;
-	margin-left: 35px;
+	margin-left: 10px;
+	width: 130px;
 	height: 100%;
 }
 .nav_items li a
@@ -417,22 +420,28 @@ section
 	padding-left: 14px;
 	padding-right: 10px;
 }
+
+
 .nav_items li.active
 {
 	background: #ff4200;
 }
+
 .nav_items li.active a
-{
+{	
 	color: #FFFFFF;
 }
 .nav_items li:hover
-{
+{ 
 	background: #ff4200;
 }
+
+
 .nav_items li:hover a
 {
 	color: #FFFFFF;
 }
+
 
 /*********************************
 3.3 Hamburger Menu
